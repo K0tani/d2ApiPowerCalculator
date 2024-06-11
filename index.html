@@ -152,12 +152,12 @@
         <div class="w-full flex flex-col items-center pt-8">
             <div class="flex flex-col max-w-[600px]">
                 <div class="input-group flex flex-col">
-                    <label class="whitespace-nowrap font-bold" for="nameField">Inside Callouts</label>
+                    <label class="whitespace-nowrap font-bold" for="nameField">Коллауты Внутри</label>
                     <input class="p-2 border-2 border-gray-300 rounded-md" type="text" placeholder="CST" id="nameField" x-model="insideCallouts" x-on:keyup="setInsideCallouts()">
                 </div>
                 <div class="flex flex-row gap-4">
                     <div class="w-1/3 flex flex-col">
-                        <label class="whitespace-nowrap" for="guard1">Inside Left</label>
+                        <label class="whitespace-nowrap" for="guard1">Внутри Слева</label>
                         <select class="rounded-md border-2 border-gray-300 p-2" x-on:change="setInsideCalloutsFromSelect()" id="guard1" x-model="insideGuardianLeft">
                             <option value=""></option>
                             <template x-for="item in twoD" :key="item">
@@ -166,7 +166,7 @@
                         </select>
                     </div>
                     <div class="w-1/3 flex flex-col">
-                        <label class="whitespace-nowrap" for="guard2">Inside Middle</label>
+                        <label class="whitespace-nowrap" for="guard2">Внутри Центр</label>
                         <select class="rounded-md border-2 border-gray-300 p-2" x-on:change="setInsideCalloutsFromSelect()" id="guard2" x-model="insideGuardianMiddle">
                             <option value=""></option>
                             <template x-for="item in twoD" :key="item">
@@ -175,7 +175,7 @@
                         </select>
                     </div>
                     <div class="w-1/3 flex flex-col">
-                        <label class="whitespace-nowrap" for="guard3">Inside Right</label>
+                        <label class="whitespace-nowrap" for="guard3">Внутри Справа</label>
                         <select class="rounded-md border-2 border-gray-300 p-2" x-on:change="setInsideCalloutsFromSelect()" id="guard3" x-model="insideGuardianRight">
                             <option value=""></option>
                             <template x-for="item in twoD" :key="item">
@@ -185,12 +185,12 @@
                     </div>
                 </div>
                 <label class="whitespace-nowrap font-bold pt-4" for="nameField">
-                    Outside Callouts
+                    Коллауты Снаружи
                 </label>
 
                 <div class="flex flex-row gap-4">
                     <div class="flex flex-col w-1/3">
-                        <label class="whitespace-nowrap" for="guard4">Outside Left</label>
+                        <label class="whitespace-nowrap" for="guard4">Снаружи Лево</label>
                         <select class="rounded-md border-2 border-gray-300 p-2" id="guard4" x-model="outsideGuardianLeft">
                             <option value=""></option>
                             <template x-for="item in threeD" :key="item.name">
@@ -199,7 +199,7 @@
                         </select>
                     </div>
                     <div class="flex flex-col w-1/3">
-                        <label class="whitespace-nowrap" for="guard5">Outside Middle</label>
+                        <label class="whitespace-nowrap" for="guard5">Снаружи Центр</label>
                         <select class="rounded-md border-2 border-gray-300 p-2" id="guard5" x-model="outsideGuardianMiddle">
                             <option value=""></option>
                             <template x-for="item in threeD" :key="item.name">
@@ -208,7 +208,7 @@
                         </select>
                     </div>
                     <div class="flex flex-col w-1/3">
-                        <label class="whitespace-nowrap" for="guard6">Outside Right</label>
+                        <label class="whitespace-nowrap" for="guard6">Снаружи Право</label>
                         <select class="rounded-md border-2 border-gray-300 p-2" id="guard6" x-model="outsideGuardianRight">
                             <option value=""></option>
                             <template x-for="item in threeD" :key="item.name">
