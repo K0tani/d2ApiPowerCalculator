@@ -153,7 +153,7 @@
             <div class="flex flex-col max-w-[600px]">
                 <div class="input-group flex flex-col">
                     <label class="whitespace-nowrap font-bold" for="nameField">Коллауты Внутри</label>
-                    <input class="p-2 border-2 border-gray-300 rounded-md" type="text" placeholder="CST" id="nameField" x-model="insideCallouts" x-on:keyup="setInsideCallouts()">
+                    <input class="p-2 border-2 border-gray-300 rounded-md" type="text" placeholder="КШТ" id="nameField" x-model="insideCallouts" x-on:keyup="setInsideCallouts()">
                 </div>
                 <div class="flex flex-row gap-4">
                     <div class="w-1/3 flex flex-col">
@@ -162,7 +162,7 @@
                             <option value=""></option>
                             <template x-for="item in twoD" :key="item">
                                 <option x-bind:value="item" x-text="item"></option>
-                            </template><option x-bind:value="item" x-text="item" value="Circle">Круг</option>
+                            </template><option x-bind:value="item" x-text="item" value="Круг">Круг</option>
 							<option x-bind:value="item" x-text="item" value="Квадрат">Квадрат</option>
 							<option x-bind:value="item" x-text="item" value="Треугольник">Треугольник</option>
                         </select>
@@ -173,7 +173,7 @@
                             <option value=""></option>
                             <template x-for="item in twoD" :key="item">
                                 <option x-bind:value="item" x-text="item"></option>
-                            </template><option x-bind:value="item" x-text="item" value="Circle">Круг</option>
+                            </template><option x-bind:value="item" x-text="item" value="Круг">Круг</option>
 							<option x-bind:value="item" x-text="item" value="Квадрат">Квадрат</option>
 							<option x-bind:value="item" x-text="item" value="Треугольник">Треугольник</option>
                         </select>
@@ -184,7 +184,7 @@
                             <option value=""></option>
                             <template x-for="item in twoD" :key="item">
                                 <option x-bind:value="item" x-text="item"></option>
-                            </template><option x-bind:value="item" x-text="item" value="Circle">Круг</option>
+                            </template><option x-bind:value="item" x-text="item" value="Круг">Круг</option>
 							<option x-bind:value="item" x-text="item" value="Квадрат">Квадрат</option>
 							<option x-bind:value="item" x-text="item" value="Треугольник">Треугольник</option>
                         </select>
@@ -201,12 +201,13 @@
                             <option value=""></option>
                             <template x-for="item in threeD" :key="item.name">
                                 <option x-bind:value="item.name" x-text="item.name"></option>
-                            </template><option x-bind:value="item.name" x-text="item.name" value="Куб">Куб</option>
+                            </template>
+							<option x-bind:value="item.name" x-text="item.name" value="Куб">Куб</option>
 							<option x-bind:value="item.name" x-text="item.name" value="Sphere">Сфера<</option>
-							<option x-bind:value="item.name" x-text="item.name" value="Pyramid">Пирамида</option>
-							<option x-bind:value="item.name" x-text="item.name" value="Cylinder">Цилиндр</option>
-							<option x-bind:value="item.name" x-text="item.name" value="Cone">Конус</option>
-							<option x-bind:value="item.name" x-text="item.name" value="Prism">Призма</option>
+							<option x-bind:value="item.name" x-text="item.name" value="Пирамида">Пирамида</option>
+							<option x-bind:value="item.name" x-text="item.name" value="Цилиндр">Цилиндр</option>
+							<option x-bind:value="item.name" x-text="item.name" value="Конус">Конус</option>
+							<option x-bind:value="item.name" x-text="item.name" value="Призма">Призма</option>
                         </select>
                     </div>
                     <div class="flex flex-col w-1/3">
@@ -215,12 +216,13 @@
                             <option value=""></option>
                             <template x-for="item in threeD" :key="item.name">
                                 <option x-bind:value="item.name" x-text="item.name"></option>
-                            </template><option x-bind:value="item.name" x-text="item.name" value="Куб">Куб</option>
-							<option x-bind:value="item.name" x-text="item.name" value="Sphere">Сфера<</option>
-							<option x-bind:value="item.name" x-text="item.name" value="Pyramid">Пирамида</option>
-							<option x-bind:value="item.name" x-text="item.name" value="Cylinder">Цилиндр</option>
-							<option x-bind:value="item.name" x-text="item.name" value="Cone">Конус</option>
-							<option x-bind:value="item.name" x-text="item.name" value="Prism">Призма</option>
+                            </template>
+							<option x-bind:value="item.name" x-text="item.name" value="Куб">Куб</option>
+							<option x-bind:value="item.name" x-text="item.name" value="Сфера">Сфера<</option>
+							<option x-bind:value="item.name" x-text="item.name" value="Пирамида">Пирамида</option>
+							<option x-bind:value="item.name" x-text="item.name" value="Цилиндр">Цилиндр</option>
+							<option x-bind:value="item.name" x-text="item.name" value="Конус">Конус</option>
+							<option x-bind:value="item.name" x-text="item.name" value="Призма">Призма</option>
                         </select>
                     </div>
                     <div class="flex flex-col w-1/3">
@@ -229,12 +231,13 @@
                             <option value=""></option>
                             <template x-for="item in threeD" :key="item.name">
                                 <option x-bind:value="item.name" x-text="item.name"></option>
-                            </template><option x-bind:value="item.name" x-text="item.name" value="Куб">Куб</option>
-							<option x-bind:value="item.name" x-text="item.name" value="Sphere">Сфера<</option>
-							<option x-bind:value="item.name" x-text="item.name" value="Pyramid">Пирамида</option>
-							<option x-bind:value="item.name" x-text="item.name" value="Cylinder">Цилиндр</option>
-							<option x-bind:value="item.name" x-text="item.name" value="Cone">Конус</option>
-							<option x-bind:value="item.name" x-text="item.name" value="Prism">Призма</option>
+                            </template>
+							<option x-bind:value="item.name" x-text="item.name" value="Куб">Куб</option>
+							<option x-bind:value="item.name" x-text="item.name" value="Сфера">Сфера<</option>
+							<option x-bind:value="item.name" x-text="item.name" value="Пирамида">Пирамида</option>
+							<option x-bind:value="item.name" x-text="item.name" value="Цилиндр">Цилиндр</option>
+							<option x-bind:value="item.name" x-text="item.name" value="Конус">Конус</option>
+							<option x-bind:value="item.name" x-text="item.name" value="Призма">Призма</option>
                         </select>
                     </div>
                 </div>
